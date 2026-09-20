@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pollutedenglish.opentuwa.com/sitemap.xml

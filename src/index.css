@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, "Plus Jakarta Sans", "Noto Naskh Arabic", "Segoe UI", sans-serif;
+    --font-mono: "SF Mono", Menlo, "JetBrains Mono", ui-monospace, monospace;
+    
+    /* Apple HIG System Palette */
+    --system-blue: #007aff;
+    --system-green: #34c759;
+    --system-orange: #ff9500;
+    --system-red: #ff3b30;
+    --system-gray-1: #8e8e93;
+    --system-gray-5: #e5e5ea;
+    --system-gray-6: #f2f2f7;
+    --system-grouped-bg: #f5f5f7;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--system-grouped-bg);
+    color: #1d1d1f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+    line-height: 1.47;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Apple HIG Smooth range slider */
+input[type='range'] {
+  accent-color: #007aff;
+}
+
+/* Apple HIG Accessible Focus Ring */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #007aff;
+  outline-offset: 2px;
+}
+
+/* Tactile micro-press feedback */
+.apple-pressable {
+  transition: transform 0.15s cubic-bezier(0.2, 0, 0, 1), opacity 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+.apple-pressable:active {
+  transform: scale(0.98);
+}
+

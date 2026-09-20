@@ -1,0 +1,6 @@
+{
+  "name": "Listening Practice · Arabic (MSA)",
+  "description": "Modern Standard Arabic listening comprehension practice for real-world situations with background noise: minimal pairs, dictation, and scenarios",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
