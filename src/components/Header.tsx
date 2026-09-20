@@ -30,9 +30,9 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="w-full bg-white/90 backdrop-blur-xl border-b border-black/[0.08] sticky top-0 z-30 transition-all">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-3">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:h-18 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-3">
         {/* Title */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 w-full sm:w-auto justify-between sm:justify-start">
           <h1 className="font-semibold text-base sm:text-[17px] tracking-tight text-[#1d1d1f]">
             Listening Practice <span lang="ar" className="text-[#8e8e93] font-medium">· العربية</span>
           </h1>
@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div
           role="tablist"
           aria-label="Practice Categories"
-          className="flex items-center bg-black/[0.05] p-1 rounded-2xl border border-black/[0.04]"
+          className="flex items-center bg-black/[0.05] p-1 rounded-2xl border border-black/[0.04] w-full sm:w-auto overflow-x-auto no-scrollbar shrink-0"
         >
           <button
             role="tab"
@@ -88,7 +88,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Calm View Toggle & Progress */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
           {/* Turbo Mode Switch */}
           <button
             id="turbo-mode-btn"
