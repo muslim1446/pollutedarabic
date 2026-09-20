@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pollutedenglish.opentuwa.com/sitemap.xml
+Sitemap: https://pollutedarabic.opentuwa.com/sitemap.xml

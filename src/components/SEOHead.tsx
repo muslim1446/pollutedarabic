@@ -11,7 +11,7 @@ export const SEOHead: React.FC = () => {
       <meta property="og:title" content="Polluted Arabic - Train Your Ear for Real-World Noise" />
       <meta property="og:description" content="An interactive web application for Modern Standard Arabic listening comprehension. Polluted Arabic trains users to understand spoken Arabic in challenging real-world acoustic environments." />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://pollutedenglish.opentuwa.com/" />
+      <meta property="og:url" content="https://pollutedarabic.opentuwa.com/" />
       <meta property="og:image" content="/web-app-manifest-512x512.png" />
       <meta property="og:image:alt" content="Polluted Arabic" />
       <meta property="og:site_name" content="Polluted Arabic" />
@@ -20,7 +20,7 @@ export const SEOHead: React.FC = () => {
       <meta name="twitter:title" content="Polluted Arabic - Train Your Ear for Real-World Noise" />
       <meta name="twitter:description" content="An interactive web application for Modern Standard Arabic listening comprehension. Polluted Arabic trains users to understand spoken Arabic in challenging real-world acoustic environments." />
       <meta name="twitter:image" content="/web-app-manifest-512x512.png" />
-      <meta name="twitter:image:alt" content="Polluted English" />
+      <meta name="twitter:image:alt" content="Polluted Arabic" />
     </>
   );
 };

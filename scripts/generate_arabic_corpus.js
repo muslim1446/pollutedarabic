@@ -459,14 +459,14 @@ try {
     let b2Count = allWords.filter((w) => w.level === 'B2').length;
     let c1Count = allWords.filter((w) => w.level === 'C1').length;
 
-    for (let i = 0; i < ranked.length && allWords.length < 3600; i++) {
+    for (let i = 0; i < ranked.length && allWords.length < 12000; i++) {
       const w = ranked[i];
       if (wordSet.has(w)) continue;
       let level = 'A1';
-      if (a1Count < 700) { level = 'A1'; a1Count++; }
-      else if (a2Count < 750) { level = 'A2'; a2Count++; }
-      else if (b1Count < 800) { level = 'B1'; b1Count++; }
-      else if (b2Count < 700) { level = 'B2'; b2Count++; }
+      if (a1Count < 2000) { level = 'A1'; a1Count++; }
+      else if (a2Count < 2500) { level = 'A2'; a2Count++; }
+      else if (b1Count < 2500) { level = 'B1'; b1Count++; }
+      else if (b2Count < 2500) { level = 'B2'; b2Count++; }
       else { level = 'C1'; c1Count++; }
       wordSet.add(w);
       coreSeq += 1;
@@ -806,7 +806,7 @@ const GATES = [13, 17, 22, 27];
 const BELTS = [12, 17, 22, 27];
 
 const allScenarios = [];
-const TARGET_SCENARIOS = 1020;
+const TARGET_SCENARIOS = 3500;
 
 function pickItem(arr, idx) {
   return arr[idx % arr.length];
